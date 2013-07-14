@@ -30,7 +30,6 @@ import java.util.Set;
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.SupportedAnnotationTypes;
-import javax.annotation.processing.SupportedSourceVersion;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.element.TypeElement;
 import javax.lang.model.element.Element;
@@ -40,18 +39,15 @@ import javax.lang.model.type.TypeKind;
 import javax.lang.model.type.TypeMirror;
 import javax.lang.model.util.ElementFilter;
 import javax.tools.Diagnostic.Kind;
-import javax.lang.model.SourceVersion;
 
 /** 
  * This annotation processor examines methods marked {@link com.jasonstedman.extensions.AbstractForever}
  * 
  * @author Jason Stedman
- * @version 1.0
+ * @version 1.1
  * 
  */
-@SuppressWarnings("restriction")
 @SupportedAnnotationTypes("com.jasonstedman.extensions.AbstractForever")
-@SupportedSourceVersion(SourceVersion.RELEASE_7)
 public class AbstractForeverAnnotationProcessor extends AbstractProcessor {
 
 	@Override

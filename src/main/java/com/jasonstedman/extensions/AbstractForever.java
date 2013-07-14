@@ -42,7 +42,7 @@ import java.lang.annotation.Target;
  * propagates its requirement downward.
  * 
  * @author Jason Stedman
- * @version 1.0
+ * @version 1.1
  *
  */
 @Target(value = ElementType.METHOD)
